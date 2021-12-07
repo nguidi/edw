@@ -230,7 +230,6 @@ https://templatemo.com/tm-521-get-ready
 
   .menu-burger {
     color: #ffffff;
-    padding-top: 11px;
     -webkit-user-select: none;
     cursor: pointer;
     transition: .4s;
@@ -238,8 +237,9 @@ https://templatemo.com/tm-521-get-ready
     z-index: 9999;
   }
 
-  .menu-burger.fs {
-    transform: rotate(-180deg) translateY(5px);
+  .menu-burger img {
+    width: 100%;
+    cursor: pointer;
   }
 
   .menu-items {
@@ -253,9 +253,29 @@ https://templatemo.com/tm-521-get-ready
     height: 100%;
     opacity: 0;
     transition: .4s;
-    margin-top: 50px;
+    margin-top: 100px;
     transform: translateY(-200%);
     pointer-events: none;
+  }
+
+  .menu-items .container {
+    margin-bottom: 90px;
+  }
+
+  .menu-items .container .row {
+    padding: 15px 0px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .error-msg {
+    color: #d13333
+  }
+
+  .nomination-complete {
+    display: none;
   }
 
   .menu-items ul.menu {

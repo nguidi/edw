@@ -9,9 +9,16 @@
 
 
     // MENU
-    $('.menu-burger').on('click', function() {
+    $('.show-award').on('click', function() {
+      $('.menu-items form').show();
+		  $('.nomination-complete').hide();
       $('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
-      $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
+      if ($('.show-award').hasClass('open')) {
+        $('.menu-burger').html('<img src="images/award.png" alt="award"></img>')
+      } else {
+        $('.menu-burger').html('<img src="images/cancel.png" alt="cancel"></img>')
+      }
+      $('.show-award').toggleClass('open')
     });
 
 

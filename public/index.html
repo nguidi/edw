@@ -19,7 +19,6 @@ https://templatemo.com/tm-521-get-ready
 
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/vegas.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/templatemo-style.css">
@@ -35,7 +34,6 @@ https://templatemo.com/tm-521-get-ready
                
           </div>
      </section>
-
 
      <!-- GRID LINE -->
     <section class="grid">
@@ -60,7 +58,60 @@ https://templatemo.com/tm-521-get-ready
 
             </div>
          </div>
-    </section>
+     </section>
+
+     <div class="menu-bg"></div>
+     <div class="menu-burger show-award">
+          <img src="images/award.png" alt="award">
+     </div>
+
+     <div class="menu-items">
+          <div class="container">
+               <form class="form" onclick="return false;">
+                    <div class="row">
+                         <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                              <select class="form-control" aria-label="award-list" id="available-awards">
+                                   <option value="" selected>Premio</option>
+                              </select>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                              <select class="form-control" aria-label="employees" id="available-employees">
+                                   <option value="" selected>Nominado</option>
+                              </select>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                              <textarea class="form-control" rows="3" placeholder="¿Porque se merece el premio?"></textarea>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                              <button class="btn btn-primary pull-right" id="nominate">Nominar!</button>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                              <p class="error-msg text-center"></p>
+                         </div>
+                    </div>
+               </form>
+               <div class="nomination-complete">
+                    <div class="row">
+                         <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                              <p class="text-center text-muted"></p>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+                              <button class="btn btn-primary center-block" id="new-nomination">Nueva nominación!</button>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
 
      <!-- HOME -->
      <section id="home">
@@ -90,7 +141,7 @@ https://templatemo.com/tm-521-get-ready
                                         <h3>Segundos</h3>
                                    </li>     
                               </ul>
-                              <h1>Realiza tu nominación al Widis Awards haciendo click <a href="#award">aquí!</a></h1>
+                              <h1>Realiza tu nominación al Widis Awards haciendo click <a href="#award" class="show-award">aquí!</a></h1>
                          </div>
                     </div>
 
